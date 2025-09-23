@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KE CHACHI GAR | Insights</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "golden-light": "#FDE68A",
+              "golden-main": "#D4AF37",
+              "golden-dark": "#B8860B",
+              "background-light": "#FFFFFF",
+              "text-dark": "#1C1917",
+              "text-light": "#44403C",
+              "card-bg": "#FFFBEB",
+              "border-color": "#F5EAD5",
+            },
+            fontFamily: {
+              display: ["Be Vietnam Pro"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "2rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-background-light font-display text-text-dark">
+    <div class="flex h-full min-h-screen w-full flex-col">
+      <header class="sticky top-0 z-50 bg-background-light/80 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+          <div class="flex h-20 items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="h-5 w-8 text-golden-main">
+                <img
+                  src="assets/Generated Image September 18, 2025 - 1_38PM.png"
+                  alt="Logo"
+                />
+              </div>
+              <h2 class="text-xl font-bold text-text-dark">KE CHACHI GAR</h2>
+            </div>
+            <nav class="hidden items-center gap-8 md:flex">
+              <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="index.html"
+                >Home</a
+              >
+                <a
+                href="insight.html"
+                aria-current="page"
+                class="min-w-[84px] cursor-pointer inline-flex items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                >Insights</a
+              >
+            
+              <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="episodes.html"
+                >Episodes</a
+              >
+
+              <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="contact.html"
+                >Contact</a
+              >
+            </nav>
+            <div class="flex items-center gap-4">
+              <a
+                href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                target="_blank"
+                class="hidden md:inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                rel="noopener noreferrer"
+              >
+                <span class="truncate">Watch Now</span>
+              </a>
+              <div
+                class="g-ytsubscribe"
+                data-channelid="UCdiy1qMehGf-ni8sv1uvo6g"
+                data-layout="default"
+                data-count="default"
+              ></div>
+              <button
+                id="mobile-menu-button"
+                class="md:hidden text-text-dark"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                aria-label="Open menu"
+              >
+                <span class="material-symbols-outlined"> menu </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Mobile menu (hidden by default) -->
+      <div
+        id="mobile-menu"
+        class="md:hidden fixed inset-x-4 top-20 z-40 origin-top-right rounded-lg bg-white/95 p-4 shadow-lg hidden transition-transform duration-200 ease-out"
+        aria-hidden="true"
+      >
+        <nav class="flex flex-col gap-3">
+          <a
+            href="index.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Home</a
+          >
+           <a
+            href="insight.html"
+            aria-current="page"
+            class="mt-2 w-full inline-flex items-center justify-start rounded-lg bg-golden-main text-white px-3 py-2 font-bold"
+            >Insights</a
+          >
+         
+
+          <a
+            href="episodes.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Episode</a
+          >
+         
+ <a
+            href="contact.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Contact</a
+          >
+          <a
+            href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+            target="_blank"
+            class="mt-2 w-full inline-flex items-center justify-center rounded-lg bg-golden-main text-white py-2 font-bold"
+            rel="noopener noreferrer"
+          >
+            Watch Now
+          </a>
+        </nav>
+      </div>
+      <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div class="max-w-4xl mx-auto">
+          <div class="reveal text-center mb-16">
+            <p
+              class="text-sm font-bold uppercase tracking-widest text-golden-main"
+            >
+              Insights
+            </p>
+            <h2
+              class="mt-4 text-4xl lg:text-6xl font-black tracking-tighter text-text-dark dark:text-text-light"
+            >
+              Understanding the Challenges
+            </h2>
+            <p
+              class="mt-8 max-w-3xl mx-auto text-lg leading-8 text-text-dark/70 dark:text-text-light/70"
+            >
+              The youth of Ethiopia are the nation's future, yet they face a
+              complex web of interconnected challenges. From hurdles in the
+              education system to the scarcity of employment and the devastating
+              impact of addiction, these obstacles can seem insurmountable. This
+              page delves into these critical issues, providing data-driven
+              insights and exploring how they amplify one another.
+            </p>
+          </div>
+          <div class="space-y-12">
+            <section class="reveal flex flex-col">
+              <h3
+                class="text-3xl font-bold tracking-tight text-text-dark dark:text-text-light mb-8"
+              >
+               <span class="text-golden-dark">The Challenges:</span> A Complex Web
+              </h3>
+              <div class="space-y-10">
+                <div
+                  class="bg-card-bg dark:bg-card-bg-dark border border-border-color dark:border-border-color-dark p-8 rounded-xl grid md:grid-cols-2 items-center gap-8 lg:gap-12 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
+                >
+                  <div class="space-y-4 ">
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="w-12 h-12 rounded-lg bg-golden-light dark:bg-golden-dark/20 flex items-center justify-center flex-shrink-0"
+                      >
+                        <span
+                          class="material-symbols-outlined text-golden-main text-3xl"
+                          >school</span
+                        >
+                      </div>
+                      <h4
+                        class="text-2xl font-bold tracking-tight text-text-dark dark:text-text-light"
+                      >
+                        Education
+                      </h4>
+                    </div>
+                    <p
+                      class="text-base leading-7 text-text-dark/70 dark:text-text-light/70"
+                    >
+                      Despite progress, the Ethiopian education system grapples
+                      with issues of quality, access, and relevance. Overcrowded
+                      classrooms, under-resourced schools, and a curriculum that
+                      sometimes fails to equip students with practical,
+                      in-demand skills are significant concerns.
+                    </p>
+                  </div>
+                  <div class="rounded-lg overflow-hidden">
+                    <img
+                      alt="Students in an Ethiopian classroom"
+                      class="w-full h-full object-cover"
+                      src="assets/Screenshot 2025-09-23 194732.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="reveal bg-card-bg dark:bg-card-bg-dark border border-border-color dark:border-border-color-dark p-8 rounded-xl grid md:grid-cols-2 items-center gap-8 lg:gap-12 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
+                >
+                  <div class="rounded-lg overflow-hidden md:order-2">
+                    <img
+                      alt="Young person looking for a job"
+                      class="w-full h-full object-cover"
+                      src="assets/Screenshot 2025-09-23 195358.png"
+                    />
+                  </div>
+                  <div class="space-y-4 md:order-1">
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="w-12 h-12 rounded-lg bg-golden-light dark:bg-golden-dark/20 flex items-center justify-center flex-shrink-0"
+                      >
+                        <span
+                          class="material-symbols-outlined text-golden-main text-3xl"
+                          >work</span
+                        >
+                      </div>
+                      <h4
+                        class="text-2xl font-bold tracking-tight text-text-dark dark:text-text-light"
+                      >
+                        Unemployment
+                      </h4>
+                    </div>
+                    <p
+                      class="text-base leading-7 text-text-dark/70 dark:text-text-light/70"
+                    >
+                      Youth unemployment is a critical issue. This
+                      "Waithood"—the prolonged transition to stable
+                      adulthood—can lead to immense frustration, economic
+                      dependency, and a sense of disillusionment, pushing some
+                      towards risky behaviors.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="reveal bg-card-bg dark:bg-card-bg-dark border border-border-color dark:border-border-color-dark p-8 rounded-xl grid md:grid-cols-2 items-center gap-8 lg:gap-12 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
+                >
+                  <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="w-12 h-12 rounded-lg bg-golden-light dark:bg-golden-dark/20 flex items-center justify-center flex-shrink-0"
+                      >
+                        <span
+                          class="material-symbols-outlined text-golden-main text-3xl"
+                          >psychology</span
+                        >
+                      </div>
+                      <h4
+                        class="text-2xl font-bold tracking-tight text-text-dark dark:text-text-light"
+                      >
+                        Addiction
+                      </h4>
+                    </div>
+                    <p
+                      class="text-base leading-7 text-text-dark/70 dark:text-text-light/70"
+                    >
+                      Substance abuse, particularly of khat and alcohol, poses a
+                      serious threat. Addiction not only derails individual
+                      potential but also strains families and communities,
+                      creating a cycle of despair.
+                    </p>
+                  </div>
+                  <div class="rounded-lg overflow-hidden">
+                    <img
+                      alt="Person struggling with addiction"
+                      class="w-full h-full object-cover"
+                      src="assets/Screenshot 2025-09-23 194939.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div
+              class="border-t border-border-color dark:border-border-color-dark my-16"
+            ></div>
+            <section class="reveal grid md:grid-cols-5 gap-12 items-center">
+              <div class="md:col-span-2">
+                <img
+                  alt="Illustration of interconnected gears"
+                  class="rounded-xl w-full object-cover aspect-square"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDybO5KzQjyqHv8flRteNslkln6TNmsGr6uoM9FEnTdiXXTwyf7iM2uCitPmZJ9lijCq3WqSxuvKaUetmTchB1iJnhcgoLa-YfaB9J9PE3PLmpZGNZxJv7bTwZ6rvqK_gUkT8vEczpktRY_raWo3KZUFgHEdOEvlM_Ta_qK-wEdeFHGyAkvFptRBfJHzz3qG56dQ8EZMhm_RBLf9KWHHVYdj49T90YhtyGA34mBbHyuQHp0nL1zVPDM1-qbrVbnszDnQU8y-uENVA"
+                />
+              </div>
+              <div class="md:col-span-3">
+                <h3
+                  class="text-3xl font-bold tracking-tight text-text-dark dark:text-text-light mb-6"
+                >
+                 <span class="text-golden-dark">Interconnections:</span> How Challenges Amplify Each Other
+                </h3>
+                <p
+                  class="text-lg leading-8 text-text-dark/70 dark:text-text-light/70"
+                >
+                  These challenges do not exist in isolation. A struggling
+                  student is more likely to drop out and face unemployment. An
+                  unemployed youth, grappling with hopelessness, may turn to
+                  substance abuse as a coping mechanism. An individual battling
+                  addiction will find it nearly impossible to maintain a job or
+                  pursue further education. This vicious cycle traps many young
+                  Ethiopians, stifling their potential and hindering national
+                  progress.
+                </p>
+              </div>
+            </section>
+            <div
+              class="border-t border-border-color dark:border-border-color-dark my-16"
+            ></div>
+            <section>
+              <div
+                class="bg-card-bg dark:bg-card-bg-dark border border-border-color dark:border-border-color-dark p-8 sm:p-12 rounded-xl relative overflow-hidden"
+              >
+                <div
+                  class="absolute -right-20 -bottom-20 w-64 h-64 text-golden-main/10 dark:text-golden-main/10"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 200 200"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M100 0C44.77 0 0 44.77 0 100s44.77 100 100 100 100-44.77 100-100S155.23 0 100 0zM80 130c-11.05 0-20-8.95-20-20s8.95-20 20-20 20 8.95 20 20-8.95 20-20 20zm40 0c-11.05 0-20-8.95-20-20s8.95-20 20-20 20 8.95 20 20-8.95 20-20 20zm0-60c-11.05 0-20-8.95-20-20s8.95-20 20-20 20 8.95 20 20-8.95 20-20 20zm-40 0c-11.05 0-20-8.95-20-20s8.95-20 20-20 20 8.95 20 20-8.95 20-20 20z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="reveal relative">
+                  <h3
+                    class="text-3xl font-bold tracking-tight text-text-dark dark:text-text-light mb-6"
+                  >
+                    <span class="text-golden-dark">KE CHACHI GAR</span> : Breaking the Cycle
+                  </h3>
+                  <p
+                    class="text-lg leading-8 text-text-dark/70 dark:text-text-light/70"
+                  >
+                    "KE CHACHI GAR" (What's the solution?) is more than just a
+                    podcast; it's a movement. We believe that the first step to
+                    solving a problem is understanding it. By sharing the real
+                    stories behind the statistics, we aim to:
+                  </p>
+                  <ul
+                    class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 text-base leading-7 text-text-dark/80 dark:text-text-light/80"
+                  >
+                    <li class="flex items-start">
+                      <span
+                        class="material-symbols-outlined text-golden-main mr-3 mt-1"
+                        >check_circle</span
+                      >
+                      <span
+                        ><strong>Foster Dialogue:</strong> Create a safe and
+                        open platform for youth to discuss their struggles
+                        without fear of judgment.</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        class="material-symbols-outlined text-golden-main mr-3 mt-1"
+                        >check_circle</span
+                      >
+                      <span
+                        ><strong>Raise Awareness:</strong> Educate the wider
+                        community about the interconnected nature of these
+                        challenges.</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        class="material-symbols-outlined text-golden-main mr-3 mt-1"
+                        >check_circle</span
+                      >
+                      <span
+                        ><strong>Inspire Hope:</strong> Showcase stories of
+                        resilience, innovation, and success from individuals who
+                        have overcome these obstacles.</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        class="material-symbols-outlined text-golden-main mr-3 mt-1"
+                        >check_circle</span
+                      >
+                      <span
+                        ><strong>Promote Solutions:</strong> Connect our
+                        audience with experts, resources, and actionable advice
+                        to help them navigate their paths and build brighter
+                        futures.</span
+                      >
+                    </li>
+                  </ul>
+                  <p
+                    class="mt-8 text-lg leading-8 text-text-dark/70 dark:text-text-light/70"
+                  >
+                    By tackling these issues head-on, KE CHACHI GAR aims to
+                    empower Ethiopian youth to break the cycle and build a
+                    future defined by opportunity, not by obstacles.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <div
+              class="text-center pt-16 border-t border-border-color dark:border-border-color-dark mt-24"
+            >
+              <h3
+                class="text-3xl font-bold tracking-tight text-text-dark dark:text-text-light"
+              >
+                Ready to Dive In?
+              </h3>
+              <p class="mt-4 text-lg text-text-dark/70 dark:text-text-light/70">
+                Listen to our latest episodes on YouTube
+              </p>
+              <div
+                class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+              >
+                 <a
+                  href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                  target="_blank"
+                  class="mt-4 inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                  rel="noopener noreferrer"
+                >
+                  <span class="truncate">Listen to Episodes</span>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="border-t border-border-color grad">
+        <div class="container mx-auto px-4 py-12">
+          <div
+            class="flex flex-col items-center justify-between gap-8 md:flex-row"
+          >
+            <!-- Social Icons -->
+            <div
+              class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:order-2"
+            >
+              <a
+                href="https://www.facebook.com/share/19LXsHXZGS/"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i
+                  class="fab fa-facebook-f text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+
+              <!-- ✅ X (new Twitter logo as SVG) -->
+              <a href="https://x.com" target="_blank" aria-label="X">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 text-[#d4b36d] hover:text-[#b7954c]"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.82-5.97 6.82H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.208 5.45-6.208z"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.instagram.com/chachi_tadesse?igsh=MXFqMTA3MnI4ZTNhMA=="
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i
+                  class="fab fa-instagram text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <a
+                href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i
+                  class="fab fa-youtube text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <!-- Email -->
+              <a
+                href="mailto:Chachitadesse1130@gmail.com"
+                target="_blank"
+                aria-label="Email"
+              >
+                <i
+                  class="fa-solid fa-envelope text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <a
+                href="https://spotify.com"
+                target="_blank"
+                aria-label="Spotify"
+              >
+                <i
+                  class="fab fa-spotify text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-sm text-text-light md:order-1">
+              © 2024 KE CHACHI GAR. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- ✅ Font Awesome Free CDN -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </div>
+
+    <div id="site-outro" class="site-overlay" aria-hidden="true">
+      <div class="overlay-content" role="dialog" aria-modal="true">
+        <h2 class="outro-title">Thanks for visiting</h2>
+        <p class="outro-sub">Subscribe on YouTube to catch every episode.</p>
+        <div class="outro-actions">
+          <a
+            href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-overlay"
+            >Visit Channel</a
+          >
+          <button id="outro-close" class="btn-overlay">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KE CHACHI GAR | Episodes</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "golden-light": "#FDE68A",
+              "golden-main": "#D4AF37",
+              "golden-dark": "#B8860B",
+              "background-light": "#FFFFFF",
+              "text-dark": "#1C1917",
+              "text-light": "#44403C",
+              "card-bg": "#FFFBEB",
+              "border-color": "#F5EAD5",
+            },
+            fontFamily: {
+              display: ["Be Vietnam Pro"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "2rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-background-light font-display text-text-dark">
+    <div class="flex h-full min-h-screen w-full flex-col">
+      <header class="sticky top-0 z-50 bg-background-light/80 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+          <div class="flex h-20 items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="h-5 w-8 text-golden-main">
+                <img
+                  src="assets/Generated Image September 18, 2025 - 1_38PM.png"
+                  alt="Logo"
+                />
+              </div>
+              <h2 class="text-xl font-bold text-text-dark">KE CHACHI GAR</h2>
+            </div>
+            <nav class="hidden items-center gap-8 md:flex">
+             
+              <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="index.html"
+                >Home</a
+              >
+                 <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="insight.html"
+                >Insights</a
+              >
+ <a
+                href="episodes.html"
+                aria-current="page"
+                class="min-w-[84px] cursor-pointer inline-flex items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                >Episodes</a
+              >
+              <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="contact.html"
+                >Contact</a
+              >
+            </nav>
+            <div class="flex items-center gap-4">
+              <a
+                href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                target="_blank"
+                class="hidden md:inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                rel="noopener noreferrer"
+              >
+                <span class="truncate">Watch Now</span>
+              </a>
+              <div
+                class="g-ytsubscribe"
+                data-channelid="UCdiy1qMehGf-ni8sv1uvo6g"
+                data-layout="default"
+                data-count="default"
+              ></div>
+              <button
+                id="mobile-menu-button"
+                class="md:hidden text-text-dark"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                aria-label="Open menu"
+              >
+                <span class="material-symbols-outlined"> menu </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Mobile menu (hidden by default) -->
+      <div
+        id="mobile-menu"
+        class="md:hidden fixed inset-x-4 top-20 z-40 origin-top-right rounded-lg bg-white/95 p-4 shadow-lg hidden transition-transform duration-200 ease-out"
+        aria-hidden="true"
+      >
+        <nav class="flex flex-col gap-3">
+              <a
+            href="index.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Home</a
+          >
+            <a
+            href="insight.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Insights</a
+          >
+          <a
+            href="episodes.html"
+            aria-current="page"
+            class="mt-2 w-full inline-flex items-center justify-start rounded-lg bg-golden-main text-white px-3 py-2 font-bold"
+            >Epsodes</a
+          >
+        
+          <a
+            href="contact.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Contact</a
+          >
+          <a
+            href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+            target="_blank"
+            class="mt-2 w-full inline-flex items-center justify-center rounded-lg bg-golden-main text-white py-2 font-bold"
+            rel="noopener noreferrer"
+          >
+            Watch Now
+          </a>
+        </nav>
+      </div>
+           
+        
+      <main class="flex-grow">
+      <!-- All Episodes Section (grouped by season) - moved here -->
+      <section class=" py-16 all-episodes bg-card-bg">
+        <div class="mx-auto max-w-6xl px-4 ">
+          <h2
+            class="mt-4 text-4xl lg:text-6xl font-black tracking-tighter text-text-dark dark:text-text-light"
+          >
+            All Episodes
+          </h2>
+          <p class="mt-4 max-w-2xl mx-auto text-lg text-center">
+            Explore our collection of conversations aimed at empowering youth,
+            tackling addiction, and promoting child growth. Find the episode
+            that speaks to you.
+          </p>
+          <!-- Season 1 -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-text-dark mb-4">Season 1</h3>
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <!-- Episode 1 -->
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 1 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/photo_2025-09-21_00-30-23.jpg"
+                  />
+                  <a
+                    href="https://youtu.be/o9Q8odsEfeY?si=WkdGYiwy5341YLuR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Watch Episode 1 on YouTube"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Episode 1</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Understanding Addiction
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    A deep dive into the causes and effects of addiction on
+                    young people.
+                  </p>
+                  <a
+                    href="https://youtu.be/o9Q8odsEfeY?si=WkdGYiwy5341YLuR"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Watch Now</span>
+                    <span class="material-symbols-outlined text-base"
+                      >play_arrow</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Episode 2 -->
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 2 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/photo_2025-09-21_00-31-20.jpg"
+                  />
+                  <a
+                    href="https://youtu.be/QtnpngavZcU?si=dO6RsRZbYD581Q4F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Watch Episode 2 on YouTube"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Episode 2</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Navigating Peer Pressure
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    Strategies for resisting peer pressure and making healthy
+                    choices.
+                  </p>
+                  <a
+                    href="https://youtu.be/QtnpngavZcU?si=dO6RsRZbYD581Q4F"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Watch Now</span>
+                    <span class="material-symbols-outlined text-base"
+                      >play_arrow</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Episode 3 -->
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 3 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/photo_2025-09-21_00-31-36.jpg"
+                  />
+                  <a
+                    href="https://youtu.be/WXIi4BEihqM?si=0IUM9iN2IViLNjpz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Watch Episode 3 on YouTube"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Episode 3</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Building Resilience
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    Techniques for building resilience and overcoming adversity.
+                  </p>
+                  <a
+                    href="https://youtu.be/WXIi4BEihqM?si=0IUM9iN2IViLNjpz"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Watch Now</span>
+                    <span class="material-symbols-outlined text-base"
+                      >play_arrow</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Placeholder Episodes (4-8) linking to channel -->
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 4 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/card1.jpg"
+                  />
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open channel"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Season 1</p>
+                  <p class="text-sm text-golden-main">Episode 4</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Coming Soon
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    More episodes are on the channel — visit to explore.
+                  </p>
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Visit Channel</span>
+                    <span class="material-symbols-outlined text-base"
+                      >open_in_new</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 5 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/card3.jpg"
+                  />
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open channel"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Season 1</p>
+                  <p class="text-sm text-golden-main">Episode 5</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Coming Soon
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    More episodes are on the channel — visit to explore.
+                  </p>
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Watch Now</span>
+                    <span class="material-symbols-outlined text-base"
+                      >play_arrow</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 6 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/card4.jpg"
+                  />
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open channel"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Season 1</p>
+                  <p class="text-sm text-golden-main">Episode 6</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Coming Soon
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    More episodes are on the channel — visit to explore.
+                  </p>
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Watch Now</span>
+                    <span class="material-symbols-outlined text-base"
+                      >play_arrow</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 7 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/card5.jpg"
+                  />
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open channel"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Season 1</p>
+                  <p class="text-sm text-golden-main">Episode 7</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Coming Soon
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    More episodes are on the channel — visit to explore.
+                  </p>
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Watch Now</span>
+                    <span class="material-symbols-outlined text-base"
+                      >play_arrow</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Episode 8 (placeholder) -->
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 8 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/card1.jpg"
+                  />
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open channel"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Season 1</p>
+                  <p class="text-sm text-golden-main">Episode 8</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Coming Soon
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    More episodes are on the channel — visit to explore.
+                  </p>
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Watch Now</span>
+                    <span class="material-symbols-outlined text-base"
+                      >play_arrow</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Episode 9 (placeholder) -->
+              <div
+                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div class="relative group">
+                  <img
+                    alt="Episode 9 Thumbnail"
+                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                    src="assets/card3.jpg"
+                  />
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open channel"
+                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  >
+                    <div
+                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <span class="material-symbols-outlined">play_arrow</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm text-golden-main">Season 1</p>
+                  <p class="text-sm text-golden-main">Episode 9</p>
+                  <h4 class="mt-2 text-lg font-bold text-text-dark">
+                    Coming Soon
+                  </h4>
+                  <p class="mt-2 flex-grow text-sm text-text-light">
+                    More episodes are on the channel — visit to explore.
+                  </p>
+                  <a
+                    href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                    target="_blank"
+                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Watch Now</span>
+                    <span class="material-symbols-outlined text-base"
+                      >play_arrow</span
+                    >
+                  </a>
+                </div>
+                
+              </div>
+        
+                
+            </div>
+                  <div class="mt-16 flex justify-center">
+
+ <a
+                  href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                  target="_blank"
+                  class="mt-4 inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                  rel="noopener noreferrer"
+                >
+                  <span class="truncate">Load More</span>
+                </a>
+</div>
+          </div>
+          
+        </div>
+      </section>
+</main>
+      <footer class="border-t border-border-color grad">
+        <div class="container mx-auto px-4 py-12">
+          <div
+            class="flex flex-col items-center justify-between gap-8 md:flex-row"
+          >
+            <!-- Social Icons -->
+            <div
+              class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:order-2"
+            >
+              <a
+                href="https://www.facebook.com/share/19LXsHXZGS/"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i
+                  class="fab fa-facebook-f text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+
+              <!-- ✅ X (new Twitter logo as SVG) -->
+              <a href="https://x.com" target="_blank" aria-label="X">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 text-[#d4b36d] hover:text-[#b7954c]"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.82-5.97 6.82H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.208 5.45-6.208z"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.instagram.com/chachi_tadesse?igsh=MXFqMTA3MnI4ZTNhMA=="
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i
+                  class="fab fa-instagram text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <a
+                href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i
+                  class="fab fa-youtube text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <!-- Email -->
+              <a
+                href="mailto:Chachitadesse1130@gmail.com"
+                target="_blank"
+                aria-label="Email"
+              >
+                <i
+                  class="fa-solid fa-envelope text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <a
+                href="https://spotify.com"
+                target="_blank"
+                aria-label="Spotify"
+              >
+                <i
+                  class="fab fa-spotify text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-sm text-text-light md:order-1">
+              © 2024 KE CHACHI GAR. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- ✅ Font Awesome Free CDN -->
+    
+    </div>
+
+    <div id="site-outro" class="site-overlay" aria-hidden="true">
+      <div class="overlay-content" role="dialog" aria-modal="true">
+        <h2 class="outro-title">Thanks for visiting</h2>
+        <p class="outro-sub">Subscribe on YouTube to catch every episode.</p>
+        <div class="outro-actions">
+          <a
+            href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-overlay"
+            >Visit Channel</a
+          >
+          <button id="outro-close" class="btn-overlay">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
