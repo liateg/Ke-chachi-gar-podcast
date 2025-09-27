@@ -62,7 +62,10 @@
                             href="insight.html">Insights</a>
                         <a class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
                             href="episodes.html">Episodes</a>
-
+  <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="gallery.html"
+                >Gallery</a>
                         <a href="contact.html" aria-current="page"
                             class="min-w-[84px] cursor-pointer inline-flex items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors">Contact</a>
 
@@ -93,7 +96,12 @@
                
                 <a href="episodes.html"
                     class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10">Episode</a>
-                <a href="contact.html" aria-current="page"
+                 <a
+            href="gallery.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Gallery</a
+          >
+                    <a href="contact.html" aria-current="page"
                     class="mt-2 w-full inline-flex items-center justify-start rounded-lg bg-golden-main text-white px-3 py-2 font-bold">Contact</a>
 
 
@@ -122,32 +130,56 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
                         <div class="bg-card-bg p-8 rounded-xl border border-border-color">
                             <h2 class="text-2xl font-bold text-text-dark">Send us a message</h2>
-                            <form class="mt-8 space-y-6">
-                                <div>
-                                    <label class="text-sm font-medium text-text-dark" for="name">Your Name</label>
-                                    <input
-                                        class="mt-2 h-12 w-full appearance-none rounded-lg border border-border-color bg-white px-4 text-text-dark placeholder-text-light focus:outline-none focus:ring-2 focus:ring-golden-main"
-                                        id="name" placeholder="John Doe" type="text" />
-                                </div>
-                                <div>
-                                    <label class="text-sm font-medium text-text-dark" for="email">Your Email</label>
-                                    <input
-                                        class="mt-2 h-12 w-full appearance-none rounded-lg border border-border-color bg-white px-4 text-text-dark placeholder-text-light focus:outline-none focus:ring-2 focus:ring-golden-main"
-                                        id="email" placeholder="john.doe@example.com" type="email" />
-                                </div>
-                                <div>
-                                    <label class="text-sm font-medium text-text-dark" for="message">Your Message</label>
-                                    <textarea
-                                        class="mt-2 w-full appearance-none rounded-lg border border-border-color bg-white p-4 text-text-dark placeholder-text-light focus:outline-none focus:ring-2 focus:ring-golden-main"
-                                        id="message" placeholder="Tell us what's on your mind..." rows="5"></textarea>
-                                </div>
-                                <div>
-                                    <button
-                                        class="w-full flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors">
-                                        <span class="truncate">Send Message</span>
-                                    </button>
-                                </div>
-                            </form>
+                           <!-- ✅ Contact Form -->
+<form id="contact-form" class="mt-8 space-y-6">
+  <div>
+    <label class="text-sm font-medium text-text-dark" for="name">Your Name</label>
+    <input
+      name="user_name"
+      id="name"
+      placeholder="John Doe"
+      type="text"
+      required
+      class="mt-2 h-12 w-full appearance-none rounded-lg border border-border-color bg-white px-4 text-text-dark placeholder-text-light focus:outline-none focus:ring-2 focus:ring-golden-main"
+    />
+  </div>
+
+  <div>
+    <label class="text-sm font-medium text-text-dark" for="email">Your Email</label>
+    <input
+      name="user_email"
+      id="email"
+      placeholder="john.doe@example.com"
+      type="email"
+      required
+      class="mt-2 h-12 w-full appearance-none rounded-lg border border-border-color bg-white px-4 text-text-dark placeholder-text-light focus:outline-none focus:ring-2 focus:ring-golden-main"
+    />
+  </div>
+<input type="hidden" name="title" value="Contact Form Submission" />
+<input type="hidden" name="name" value="Contact User" />
+
+  <div>
+    <label class="text-sm font-medium text-text-dark" for="message">Your Message</label>
+    <textarea
+      name="user_message"
+      id="message"
+      placeholder="Tell us what's on your mind..."
+      rows="5"
+      required
+      class="mt-2 w-full appearance-none rounded-lg border border-border-color bg-white p-4 text-text-dark placeholder-text-light focus:outline-none focus:ring-2 focus:ring-golden-main"
+    ></textarea>
+  </div>
+
+  <div>
+    <button
+      type="submit"
+      class="w-full flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+    >
+      <span class="truncate">Send Message</span>
+    </button>
+  </div>
+</form>
+
                         </div>
                         <div class="space-y-8">
                             <div>
@@ -246,6 +278,36 @@
         </div>
     </div>
     </div>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script>
+  // Initialize EmailJS
+  (function() {
+      emailjs.init({ publicKey: "_MnAB4FZrV6wc_xxS" }); 
+  })();
+
+  // Handle Form Submit
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_sh5a4dm', 'template_6gm74j7', this)
+        .then(() => {
+            alert('✅ Message sent successfully!');
+            this.reset();
+        })
+        .catch((error) => {
+            console.error("error.message",error);
+            alert('Failed to send message. Please try again.');
+        });
+  });
+</script>
+
+
+
     <script src="script.js"></script>
 </body>
 
