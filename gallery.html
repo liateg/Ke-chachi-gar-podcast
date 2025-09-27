@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KE CHACHI GAR | Home</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script:wght@400..700&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "golden-light": "#FDE68A",
+              "golden-main": "#D4AF37",
+              "golden-dark": "#B8860B",
+              "background-light": "#FFFFFF",
+              "text-dark": "#1C1917",
+              "text-light": "#44403C",
+              "card-bg": "#FFFBEB",
+              "border-color": "#F5EAD5",
+            },
+            fontFamily: {
+              display: ["Be Vietnam Pro"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "2rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-background-light font-display text-text-dark">
+    <div class="flex h-full min-h-screen w-full flex-col">
+      <header class="sticky top-0 z-50 bg-background-light/80 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+          <div class="flex h-20 items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="h-5 w-8 text-golden-main">
+                <img
+                  src="assets/Generated Image September 18, 2025 - 1_38PM.png"
+                  alt="Logo"
+                />
+              </div>
+              <h2 class="text-xl font-bold text-text-dark">KE CHACHI GAR</h2>
+            </div>
+            <nav class="hidden items-center gap-8 md:flex">
+              <a
+                href="index.html"
+                aria-current="page"
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                >Home</a
+              >
+              <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="insight.html"
+                >Insights</a
+              >
+              <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="episodes.html"
+                >Episodes</a
+              >
+              <a
+                class="min-w-[84px] cursor-pointer inline-flex items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                href="gallery.html"
+                >Gallery</a
+              >
+              <a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="contact.html"
+                >Contact</a
+              >
+            </nav>
+            <div class="flex items-center gap-4">
+              <a
+                href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                target="_blank"
+                class="hidden md:inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                rel="noopener noreferrer"
+              >
+                <span class="truncate">Watch Now</span>
+              </a>
+              <div
+                class="g-ytsubscribe"
+                data-channelid="UCdiy1qMehGf-ni8sv1uvo6g"
+                data-layout="default"
+                data-count="default"
+              ></div>
+              <button
+                id="mobile-menu-button"
+                class="md:hidden text-text-dark"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                aria-label="Open menu"
+              >
+                <span class="material-symbols-outlined"> menu </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Mobile menu (hidden by default) -->
+      <div
+        id="mobile-menu"
+        class="md:hidden fixed inset-x-4 top-20 z-40 origin-top-right rounded-lg bg-white/95 p-4 shadow-lg hidden transition-transform duration-200 ease-out"
+        aria-hidden="true"
+      >
+        <nav class="flex flex-col gap-3">
+          <a
+            href="index.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Home</a
+          >
+          <a
+            href="insight.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Insights</a
+          >
+          <a
+            href="episodes.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Episodes</a
+          >
+          <a
+            href="gallery.html"
+            aria-current="page"
+            class="mt-2 w-full inline-flex items-center justify-start rounded-lg bg-golden-main text-white px-3 py-2 font-bold"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Contact</a
+          >
+          <a
+            href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+            target="_blank"
+            class="mt-2 w-full inline-flex items-center justify-center rounded-lg bg-golden-main text-white py-2 font-bold"
+            rel="noopener noreferrer"
+          >
+            Watch Now
+          </a>
+        </nav>
+      </div>
+      <main class="flex-1 px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-7xl mx-auto">
+       <h2
+              class="mt-5 py-12 text-4xl lg:text-6xl font-black tracking-tighter text-text-dark dark:text-text-light text-center"
+            >
+              Gallery
+            </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+  <!-- Gallery Items -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-08.jpg" alt="Gallery Image 19" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-13.jpg" alt="Gallery Image 20" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-17.jpg" alt="Gallery Image 21" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-21.jpg" alt="Gallery Image 22" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-28.jpg" alt="Gallery Image 23" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-33.jpg" alt="Gallery Image 24" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-37.jpg" alt="Gallery Image 25" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-41.jpg" alt="Gallery Image 26" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-46.jpg" alt="Gallery Image 27" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-49-55.jpg" alt="Gallery Image 28" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-00.jpg" alt="Gallery Image 29" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-04.jpg" alt="Gallery Image 30" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-09.jpg" alt="Gallery Image 31" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-13.jpg" alt="Gallery Image 32" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-18.jpg" alt="Gallery Image 33" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-22.jpg" alt="Gallery Image 34" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-26.jpg" alt="Gallery Image 35" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-31.jpg" alt="Gallery Image 36" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-36.jpg" alt="Gallery Image 37" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-40.jpg" alt="Gallery Image 38" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-45.jpg" alt="Gallery Image 39" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-51.jpg" alt="Gallery Image 40" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-50-57.jpg" alt="Gallery Image 41" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-01.jpg" alt="Gallery Image 42" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-07.jpg" alt="Gallery Image 43" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-14.jpg" alt="Gallery Image 44" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-18.jpg" alt="Gallery Image 45" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-24.jpg" alt="Gallery Image 46" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-32.jpg" alt="Gallery Image 47" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-38.jpg" alt="Gallery Image 48" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-50.jpg" alt="Gallery Image 49" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-54.jpg" alt="Gallery Image 50" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-51-59.jpg" alt="Gallery Image 51" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-06.jpg" alt="Gallery Image 52" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-14.jpg" alt="Gallery Image 53" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-18.jpg" alt="Gallery Image 54" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-22.jpg" alt="Gallery Image 55" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-27.jpg" alt="Gallery Image 56" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<!-- Gallery Items -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-27.jpg" alt="Gallery Image 1" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-31.jpg" alt="Gallery Image 2" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-37.jpg" alt="Gallery Image 3" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-43.jpg" alt="Gallery Image 4" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-52-48.jpg" alt="Gallery Image 5" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-05.jpg" alt="Gallery Image 6" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-08.jpg" alt="Gallery Image 7" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-21.jpg" alt="Gallery Image 8" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-25.jpg" alt="Gallery Image 9" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-29.jpg" alt="Gallery Image 10" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-38.jpg" alt="Gallery Image 11" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-43.jpg" alt="Gallery Image 12" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-53.jpg" alt="Gallery Image 13" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-53-58.jpg" alt="Gallery Image 14" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-09.jpg" alt="Gallery Image 15" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-14.jpg" alt="Gallery Image 16" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-19.jpg" alt="Gallery Image 17" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-23.jpg" alt="Gallery Image 18" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-28.jpg" alt="Gallery Image 19" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-33.jpg" alt="Gallery Image 20" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-40.jpg" alt="Gallery Image 21" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-49.jpg" alt="Gallery Image 22" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-54.jpg" alt="Gallery Image 23" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-xl">
+  <img src="assets/photo_2025-09-27_03-54-59.jpg" alt="Gallery Image 24" class="w-full h-auto aspect-square object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"/>
+</div>
+
+</div>
+
+        </div>
+      </main>
+      <footer class="border-t border-border-color grad">
+        <div class="container mx-auto px-4 py-12">
+          <div
+            class="flex flex-col items-center justify-between gap-8 md:flex-row"
+          >
+            <!-- Social Icons -->
+            <div
+              class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:order-2"
+            >
+              <a
+                href="https://www.facebook.com/share/19LXsHXZGS/"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i
+                  class="fab fa-facebook-f text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+
+              <!-- ✅ X (new Twitter logo as SVG) -->
+              <a href="https://x.com" target="_blank" aria-label="X">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 text-[#d4b36d] hover:text-[#b7954c]"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.82-5.97 6.82H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.208 5.45-6.208z"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.instagram.com/chachi_tadesse?igsh=MXFqMTA3MnI4ZTNhMA=="
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i
+                  class="fab fa-instagram text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <a
+                href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i
+                  class="fab fa-youtube text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <!-- Email -->
+              <a
+                href="mailto:Chachitadesse1130@gmail.com"
+                target="_blank"
+                aria-label="Email"
+              >
+                <i
+                  class="fa-solid fa-envelope text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+              <a
+                href="https://spotify.com"
+                target="_blank"
+                aria-label="Spotify"
+              >
+                <i
+                  class="fab fa-spotify text-2xl text-[#d4b36d] hover:text-[#b7954c]"
+                ></i>
+              </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-sm text-text-light md:order-1">
+              © 2024 KE CHACHI GAR. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- ✅ Font Awesome Free CDN -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </div>
+
+    <div id="site-outro" class="site-overlay" aria-hidden="true">
+      <div class="overlay-content" role="dialog" aria-modal="true">
+        <h2 class="outro-title">Thanks for visiting</h2>
+        <p class="outro-sub">Subscribe on YouTube to catch every episode.</p>
+        <div class="outro-actions">
+          <a
+            href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-overlay"
+            >Visit Channel</a
+          >
+          <button id="outro-close" class="btn-overlay">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
