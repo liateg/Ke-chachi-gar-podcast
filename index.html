@@ -14,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script:wght@400..700&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
       tailwind.config = {
@@ -66,7 +72,7 @@
                 class="min-w-[84px] cursor-pointer inline-flex items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
                 >Home</a
               >
-                <a
+              <a
                 class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
                 href="insight.html"
                 >Insights</a
@@ -76,7 +82,10 @@
                 href="episodes.html"
                 >Episodes</a
               >
-
+<a
+                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+                href="gallery.html"
+                >Gallery</a>
               <a
                 class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
                 href="contact.html"
@@ -124,7 +133,7 @@
             class="mt-2 w-full inline-flex items-center justify-start rounded-lg bg-golden-main text-white px-3 py-2 font-bold"
             >Home</a
           >
-            <a
+          <a
             href="insight.html"
             class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
             >Insights</a
@@ -134,8 +143,11 @@
             class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
             >Episodes</a
           >
-
-         
+   <a
+            href="gallery.html"
+            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
+            >Gallery</a
+          >
           <a
             href="contact.html"
             class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
@@ -153,33 +165,224 @@
       </div>
       <main class="flex-grow">
         <div class="container mx-auto px-4">
-          <section class="reveal py-20 sm:py-28 grad">
+          <section class="reveal min-h-screen grad flex items-center">
             <div
-              class="relative flex min-h-[480px] flex-col items-center justify-center overflow-hidden rounded-xl bg-cover bg-center p-8 text-center"
+              class="relative grid grid-cols-1 md:grid-cols-2 items-center w-full min-h-screen overflow-hidden rounded-xl p-6 sm:p-12 lg:p-16 gap-12"
             >
-              <div class="absolute inset-0 bg-white/20"></div>
-              <div class="relative z-10 flex flex-col items-center gap-6">
+              <!-- Text Content -->
+              <div
+                class="relative z-10 flex flex-col items-center md:items-start gap-6 text-center md:text-left"
+              >
                 <h1
-                  class="text-9xl font-black tracking-tighter text-text-dark sm:text-6xl"
+                  class="text-xl sm:text-2xl md:text-4xl lg:text-8xl font-black tracking-tighter text-text-dark whitespace-nowrap hero-h1"
                 >
-                  KE <span class="text-golden-main high z-50">CHACHI</span> GAR
+                  KE <span class="text-golden-main">CHACHI</span> GAR
                 </h1>
-                <p class="max-w-xl text-lg text-text-light">
-                  Empowering Youth Through Honest Conversations
+
+                <p
+                  class="max-w-md text-sm sm:text-4xl md:text-6xl dancing-script-bold text-golden-main hero-p"
+                >
+                  Authentic Voices
                 </p>
                 <a
                   href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
                   target="_blank"
-                  class="mt-4 inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                  class="mt-4 inline-flex min-w-[84px] h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
                   rel="noopener noreferrer"
                 >
                   <span class="truncate">Watch Now</span>
                 </a>
+              </div>
 
-                <!-- Bell/notification reminder -->
+              <!-- Image -->
+              <div
+                class="relative z-10 flex justify-center items-center hero-img"
+              >
+                <img
+                  src="assets/photo_2025-09-26_23-00-36.jpg"
+                  alt="Ke Chachi Gar"
+                  class="max-w-full h-auto max-h-[80vh] rounded-lg shadow-lg object-contain left: 40%;"
+                />
               </div>
             </div>
           </section>
+
+          <section class="reveal py-16">
+            <div class="mx-auto max-w-5xl px-4">
+              <!-- Heading -->
+              <h2
+                class="text-3xl font-bold tracking-tight text-center text-text-dark sm:text-4xl gradient-underline"
+              >
+                Ke Chahci Gar Podcast
+              </h2>
+
+              <!-- Content -->
+              <div
+                class="mt-10 grid grid-cols-1 items-center gap-8 md:grid-cols-2"
+              >
+                <!-- Left: Image -->
+                <div>
+                  <img
+                    class="h-90 w-full rounded-lg object-cover shadow-lg reveal"
+                    src="assets/photo_2025-09-27_01-45-14.jpg"
+                    alt="Our Story"
+                  />
+                </div>
+
+                <!-- Right: Text -->
+                <div>
+                  <p class="text-lg leading-8 text-text-light">
+                    <span class="font-semibold text-text-dark grad"
+                      >KE CHACHI GAR</span
+                    >
+                    was born out of Chachi Tadesse’s journey of struggle, faith,
+                    and purpose. From overcoming challenges to embracing her
+                    calling to serve, Chachi uses her podcast to connect
+                    Ethiopians at home and abroad, sharing real stories that
+                    uplift, inspire, and strengthen community.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="reveal py-16">
+            <h2
+              class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline"
+            >
+              About
+            </h2>
+            <div
+              class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row text-center md:text-left"
+            >
+              <img
+                alt="Chachi Tadese"
+                class="h-90 w-90 md:h-72 md:w-72 lg:h-80 lg:w-90 rounded-lg object-cover shadow-lg"
+                src="assets/photo_2025-09-27_01-55-59.jpg"
+              />
+              <div>
+                <h3 class="text-3xl font-bold text-text-dark">Chachi Tadese</h3>
+                <p class="mt-1 text-lg font-medium text-golden-main">
+                  Artist • Storyteller • Community Servant
+                </p>
+                <p class="mt-4 text-text-light text-left">
+                  I was born and raised in Ethiopia, and my work extends far
+                  beyond music. Guided by my faith, I see my humanitarian
+                  mission as a divine calling to support children, young adults,
+                  and girls who face challenges such as addiction and lack of
+                  education.<br/>I have been involved in school feeding programs and
+                  other initiatives that provide vital resources to vulnerable
+                  communities, helping this generation recognize their true
+                  worth and potential.<br/><br/> 
+                </p>
+              </div>
+                   
+            </div>
+       <div
+              class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row flex-col-reverse text-center md:text-left"
+            >
+              <div>
+              
+                <p class="mt-4 text-text-light text-left">
+                  As a Goodwill Ambassador, I have
+                  collaborated with organizations such as the Ministry of
+                  Education, the Ministry of Peace, Ayseletenm, and UNICEF to
+                  raise funds and awareness for causes that uplift Ethiopia’s
+                  youth. My work has touched the lives of many street children
+                  and young people across the country.<br/>
+                 As an artist,
+                  entrepreneur, and advocate, I am committed to living a life of
+                  creativity, compassion, and faith—helping others walk in the
+                  fullness of God’s purpose.<br/> I am also working to build an
+                  institute that will empower young Ethiopians to create
+                  lasting, positive change in their lives. </p>
+              </div>
+              <img
+                alt="Chachi Tadese"
+                class="h-90 w-80 md:h-72 md:w-72 lg:h-80 lg:w-80 rounded-lg object-cover shadow-lg"
+                src="assets/photo_2025-09-27_02-11-59.jpg"
+              />
+            </div>
+          </section>
+
+<section class="reveal py-16">
+            <div class="mx-auto max-w-5xl">
+              <h2
+                class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline"
+              >
+                Mission, Vision, and Goals
+              </h2>
+              <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                <!-- Mission Card -->
+                <div
+                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
+                >
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
+                  >
+                    <span class="material-symbols-outlined">
+                      track_changes
+                    </span>
+                  </div>
+                  <h3 class="text-xl font-bold">Mission</h3>
+                  <p class="text-text-light">
+                   My mission is to create a platform that gives voice to stories of resilience, creativity, and faith, while addressing real-life challenges. Through honest dialogue, we aim to encourage, educate, and connect people across generations.
+                  </p>
+                </div>
+
+                <!-- Vision Card -->
+                <div
+                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
+                >
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </div>
+                  <h3 class="text-xl font-bold">Vision</h3>
+                  <p class="text-text-light">
+                   The vision of KE Chachi Gar is to inspire and uplift lives through meaningful conversations rooted in faith, culture, and personal growth empowering listeners to embrace positive change and walk in God’s purpose.
+                  </p>
+                </div>
+
+                <!-- Objectives Card -->
+                <div
+                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
+                >
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
+                  >
+                    <span class="material-symbols-outlined"> checklist </span>
+                  </div>
+                  <h3 class="text-xl font-bold">Goals</h3>
+                  
+                    <ul class="text-text-light">
+                      <li>• Empower youth and women to recognize their value and potential.</li>
+                      <li>• Provide guidance and inspiration through faith-centered conversations.</li>
+                    <li> • Highlight social issues and solutions that create lasting impact.
+ </li>
+ <li>• Build a community of listeners who support one another in growth and purpose.</li>
+                    </ul>
+                   
+  
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
           <section class="py-16">
             <div class="mx-auto max-w-5xl">
               <div class="text-center">
@@ -201,15 +404,33 @@
               </div>
               <div
                 class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
-              >
+              > <div
+                  class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color md:col-span-2 lg:col-span-1 hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal"
+                >
+               
+                  <div class="flex flex-col gap-2">
+                    <div
+                      class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main"
+                    >
+                      <span class="material-symbols-outlined"> school </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-dark">
+                      Education &amp; A Better Future
+                    </h3>
+                    <p class="text-text-light">
+                      Our content emphasizes the importance of holistic
+                      education and personal development. We discuss modern
+                      educational approaches and the role of community in
+                      nurturing resilient individuals for a better future.
+                    </p>
+                  </div>
+                </div>
+              
                 <div
                   class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal"
                 >
-                  <img
-                    alt="Youth discussing"
-                    class="w-full h-48 object-cover rounded-lg"
-                    src="assets/Screenshot 2025-09-23 195358.png"
-                  />
+               
+               
                   <div class="flex flex-col gap-2">
                     <div
                       class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main"
@@ -230,11 +451,7 @@
                 <div
                   class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal"
                 >
-                  <img
-                    alt="Person with chat"
-                    class="w-full h-48 object-cover rounded-lg"
-                    src="assets/Screenshot 2025-09-23 194939.png"
-                  />
+                
                   <div class="flex flex-col gap-2">
                     <div
                       class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main"
@@ -254,211 +471,23 @@
                     </p>
                   </div>
                 </div>
-                <div
-                  class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color md:col-span-2 lg:col-span-1 hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal"
-                >
-                  <img
-                    alt="Students learning"
-                    class="w-full h-48 object-cover rounded-lg"
-                    src="assets/Screenshot 2025-09-23 194732.png"
-                  />
-                  <div class="flex flex-col gap-2">
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main"
-                    >
-                      <span class="material-symbols-outlined"> school </span>
-                    </div>
-                    <h3 class="text-xl font-bold text-text-dark">
-                      Education &amp; A Better Future
-                    </h3>
-                    <p class="text-text-light">
-                      Our content emphasizes the importance of holistic
-                      education and personal development. We discuss modern
-                      educational approaches and the role of community in
-                      nurturing resilient individuals for a better future.
-                    </p>
-                  </div>
                 </div>
-              </div>
             </div>
-                        <div class="mt-16 flex justify-center">
-
- <a
-                  href="insights.html"
-                  target="_blank"
-                  class="mt-4 inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
-                  rel="noopener noreferrer"
-                >
-                  <span class="truncate">Learn More</span>
-                </a>
-</div>
-          </section>
-
-          <section class="reveal py-16">
-            <div class="mx-auto max-w-5xl px-4">
-              <!-- Heading -->
-              <h2
-                class="text-3xl font-bold tracking-tight text-center text-text-dark sm:text-4xl gradient-underline"
+            <div class="mt-16 flex justify-center">
+              <a
+                href="insights.html"
+                target="_blank"
+                class="mt-4 inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                rel="noopener noreferrer"
               >
-                Our Story
-              </h2>
-
-              <!-- Content -->
-              <div
-                class="mt-10 grid grid-cols-1 items-center gap-8 md:grid-cols-2"
-              >
-                <!-- Left: Image -->
-                <div>
-                  <img
-                    class="h-80 w-full rounded-lg object-cover shadow-lg reveal"
-                    src="assets/photo_2025-09-21_00-54-00.jpg"
-                    alt="Our Story"
-                  />
-                </div>
-
-                <!-- Right: Text -->
-                <div>
-                  <p class="text-lg leading-8 text-text-light">
-                    <span class="font-semibold text-text-dark grad"
-                      >KE CHACHI GAR</span
-                    >
-                    was born out of Chachi Tadesse’s journey of struggle, faith,
-                    and purpose. From overcoming challenges to embracing her
-                    calling to serve, Chachi uses her podcast to connect
-                    Ethiopians at home and abroad, sharing real stories that
-                    uplift, inspire, and strengthen community.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-
-          <section class="reveal py-16">
-            <div class="mx-auto max-w-5xl">
-              <h2
-                class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline"
-              >
-                Mission, Vision, and Objectives
-              </h2>
-              <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-                <!-- Mission Card -->
-                <div
-                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
-                >
-                  <div
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
-                  >
-                    <span class="material-symbols-outlined">
-                      track_changes
-                    </span>
-                  </div>
-                  <h3 class="text-xl font-bold">Mission</h3>
-                  <p class="text-text-light">
-                    The mission of Ke Chachi Gar is to amplify authentic voices
-                    and build a bridge between young Ethiopians and the
-                    diaspora. By sharing real stories, meaningful conversations,
-                    and uplifting perspectives, we seek to spark hope,
-                    strengthen cultural identity, and encourage growth rooted in
-                    faith, resilience, and community values.
-                  </p>
-                </div>
-
-                <!-- Vision Card -->
-                <div
-                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
-                >
-                  <div
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
-                  >
-                    <span class="material-symbols-outlined"> visibility </span>
-                  </div>
-                  <h3 class="text-xl font-bold">Vision</h3>
-                  <p class="text-text-light">
-                    Our vision is to see young Ethiopians empowered to live with
-                    purpose, pride, and hope. By connecting communities across
-                    the world, Ke Chachi Gar aims to inspire the next generation
-                    to build meaningful lives, embrace opportunity, and
-                    contribute to a brighter shared future grounded in love,
-                    culture, and faith.
-                  </p>
-                </div>
-
-                <!-- Objectives Card -->
-                <div
-                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
-                >
-                  <div
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
-                  >
-                    <span class="material-symbols-outlined"> checklist </span>
-                  </div>
-                  <h3 class="text-xl font-bold">Objectives</h3>
-                  <p class="text-text-light">
-                    The objective of Ke Chachi Gar is to unite Ethiopians
-                    locally and globally through dialogue, inspiration, and
-                    education. We are committed to sharing stories that build
-                    resilience, highlighting opportunities that empower young
-                    people, and creating a welcoming space where faith, culture,
-                    and shared experiences strengthen identity and purpose.
-                  </p>
-                </div>
-              </div>
+                <span class="truncate">Learn More</span>
+              </a>
             </div>
           </section>
 
-          <section class="reveal py-16">
-            <h2
-              class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline"
-            >
-              Meet the Host
-            </h2>
-            <div
-              class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row text-center md:text-left"
-            >
-              <img
-                alt="Chachi Tadese"
-                class="h-60 w-60 md:h-72 md:w-72 lg:h-80 lg:w-80 rounded-lg object-cover shadow-lg"
-                src="assets/photo_2025-09-22_19-16-05.jpg"
-              />
-              <div>
-                <h3 class="text-3xl font-bold text-text-dark">Chachi Tadese</h3>
-                <p class="mt-1 text-lg font-medium text-golden-main">
-                  Artist • Storyteller • Community Servant
-                </p>
-                <p class="mt-4 text-text-light">
-                  Chachi Tadesse is an artist, storyteller, and servant of her
-                  community. Guided by faith and a deep concern for humanity,
-                  she shares her journey to motivate others and remind them that
-                  all things work together for good. Through Ke Chachi Gar, she
-                  continues her mission to serve, inspire, and connect
-                  Ethiopians everywhere.
-                </p>
-              </div>
-            </div>
-            <div
-              class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row flex-col-reverse text-center md:text-left"
-            >
-              <div>
-                <h3 class="text-3xl font-bold text-text-dark">Chachi Tadese</h3>
-                <p class="mt-1 text-lg font-medium text-golden-main">
-                  Goodwill Ambassador • Voice for Youth & Community
-                </p>
-                <p class="mt-4 text-text-light">
-                  Chachi Tadesse is an artist, storyteller, and servant of her
-                  community. Guided by faith and a deep concern for humanity,
-                  she serves as a Goodwill Ambassador with Ayseletn Begenet
-                  (አይሰለትን በገነት) and continues her mission through Ke Chachi Gar
-                  — inspiring, connecting, and empowering Ethiopians everywhere.
-                </p>
-              </div>
-              <img
-                alt="Chachi Tadese"
-                class="h-60 w-60 md:h-72 md:w-72 lg:h-80 lg:w-80 rounded-lg object-cover shadow-lg"
-                src="assets/photo_2025-09-22_18-39-43.jpg"
-              />
-            </div>
-          </section>
+          
+         
+          
           <section class="reveal py-16">
             <h2
               class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline"
