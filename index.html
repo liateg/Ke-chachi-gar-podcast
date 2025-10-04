@@ -1,685 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>KE CHACHI GAR | Home</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script:wght@400..700&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "golden-light": "#FDE68A",
-              "golden-main": "#D4AF37",
-              "golden-dark": "#B8860B",
-              "background-light": "#FFFFFF",
-              "text-dark": "#1C1917",
-              "text-light": "#44403C",
-              "card-bg": "#FFFBEB",
-              "border-color": "#F5EAD5",
-            },
-            fontFamily: {
-              display: ["Be Vietnam Pro"],
-            },
-            borderRadius: {
-              DEFAULT: "0.5rem",
-              lg: "1rem",
-              xl: "2rem",
-              full: "9999px",
-            },
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>KE CHACHI GAR | Home</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script:wght@400..700&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "golden-light": "#FDE68A",
+            "golden-main": "#D4AF37",
+            "golden-dark": "#B8860B",
+            "background-light": "#FFFFFF",
+            "text-dark": "#1C1917",
+            "text-light": "#44403C",
+            "card-bg": "#FFFBEB",
+            "border-color": "#F5EAD5",
+          },
+          fontFamily: {
+            display: ["Be Vietnam Pro"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "2rem",
+            full: "9999px",
           },
         },
-      };
-    </script>
-    <script src="https://apis.google.com/js/platform.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="bg-background-light font-display text-text-dark">
-    <div class="flex h-full min-h-screen w-full flex-col">
-      <header class="sticky top-0 z-50 bg-background-light/80 backdrop-blur-sm">
-        <div class="container mx-auto px-4">
-          <div class="flex h-20 items-center justify-between">
-            <div class="flex items-center gap-3">
-              <div class="h-5 w-8 text-golden-main">
-                <img
-                  src="assets/Generated Image September 18, 2025 - 1_38PM.png"
-                  alt="Logo"
-                />
-              </div>
-              <h2 class="text-xl font-bold text-text-dark">KE CHACHI GAR</h2>
+      },
+    };
+  </script>
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-background-light font-display text-text-dark">
+  <div class="flex h-full min-h-screen w-full flex-col">
+    <header class="sticky top-0 z-50 bg-background-light/80 backdrop-blur-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex h-20 items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="h-5 w-8 text-golden-main">
+              <img src="assets/Generated Image September 18, 2025 - 1_38PM.png" alt="Logo" />
             </div>
-            <nav class="hidden items-center gap-8 md:flex">
-              <a
-                href="index.html"
-                aria-current="page"
-                class="min-w-[84px] cursor-pointer inline-flex items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
-                >Home</a
-              >
-              <a
-                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
-                href="insight.html"
-                >Insights</a
-              >
-              <a
-                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
-                href="episodes.html"
-                >Episodes</a
-              >
-<a
-                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
-                href="gallery.html"
-                >Gallery</a>
-              <a
-                class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
-                href="contact.html"
-                >Contact</a
-              >
-            </nav>
-            <div class="flex items-center gap-4">
-              <a
-                href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
-                target="_blank"
-                class="hidden md:inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
-                rel="noopener noreferrer"
-              >
+            <h2 class="text-xl font-bold text-text-dark">KE CHACHI GAR</h2>
+          </div>
+          <nav class="hidden items-center gap-8 md:flex">
+            <a href="index.html" aria-current="page"
+              class="min-w-[84px] cursor-pointer inline-flex items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors">Home</a>
+            <a class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+              href="insight.html">Insights</a>
+            <a class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+              href="episodes.html">Episodes</a>
+            <a class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+              href="gallery.html">Gallery</a>
+            <a class="text-sm font-medium text-text-light hover:text-golden-main transition-colors"
+              href="contact.html">Contact</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr" target="_blank"
+              class="hidden md:inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-golden-main text-white text-sm font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+              rel="noopener noreferrer">
+              <span class="truncate">Watch Now</span>
+            </a>
+            <div class="g-ytsubscribe" data-channelid="UCdiy1qMehGf-ni8sv1uvo6g" data-layout="default"
+              data-count="default"></div>
+            <button id="mobile-menu-button" class="md:hidden text-text-dark" aria-controls="mobile-menu"
+              aria-expanded="false" aria-label="Open menu">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu"
+      class="md:hidden fixed inset-x-4 top-20 z-40 origin-top-right rounded-lg bg-white/95 p-4 shadow-lg hidden transition-transform duration-200 ease-out"
+      aria-hidden="true">
+      <nav class="flex flex-col gap-3">
+        <a href="index.html" aria-current="page"
+          class="mt-2 w-full inline-flex items-center justify-start rounded-lg bg-golden-main text-white px-3 py-2 font-bold">Home</a>
+        <a href="insight.html" class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10">Insights</a>
+        <a href="episodes.html"
+          class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10">Episodes</a>
+        <a href="gallery.html" class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10">Gallery</a>
+        <a href="contact.html" class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10">Contact</a>
+        <a href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr" target="_blank"
+          class="mt-2 w-full inline-flex items-center justify-center rounded-lg bg-golden-main text-white py-2 font-bold"
+          rel="noopener noreferrer">
+          Watch Now
+        </a>
+      </nav>
+    </div>
+    <main class="flex-grow">
+      <div class="container mx-auto px-4">
+        <section class="reveal min-h-screen grad flex items-center">
+          <div
+            class="relative grid grid-cols-1 md:grid-cols-2 items-center w-full min-h-screen overflow-hidden rounded-xl p-6 sm:p-12 lg:p-16 gap-12">
+            <!-- Text Content -->
+            <div class="relative z-10 flex flex-col items-center md:items-start gap-6 text-center md:text-left">
+              <h1
+                class="text-xl sm:text-2xl md:text-4xl lg:text-8xl font-black tracking-tighter text-text-dark whitespace-nowrap hero-h1">
+                KE <span class="text-golden-main">CHACHI</span> GAR
+              </h1>
+
+              <p class="max-w-md text-sm sm:text-4xl md:text-6xl dancing-script-bold text-golden-main hero-p">
+                Authentic Voices
+              </p>
+              <a href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr" target="_blank"
+                class="mt-4 inline-flex min-w-[84px] h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+                rel="noopener noreferrer">
                 <span class="truncate">Watch Now</span>
               </a>
-              <div
-                class="g-ytsubscribe"
-                data-channelid="UCdiy1qMehGf-ni8sv1uvo6g"
-                data-layout="default"
-                data-count="default"
-              ></div>
-              <button
-                id="mobile-menu-button"
-                class="md:hidden text-text-dark"
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-                aria-label="Open menu"
-              >
-                <span class="material-symbols-outlined"> menu </span>
-              </button>
+            </div>
+
+            <!-- Image -->
+            <div class="relative z-10 flex justify-center items-center hero-img">
+              <img src="assets/photo_2025-09-26_23-00-36.jpg" alt="Ke Chachi Gar"
+                class="max-w-full h-auto max-h-[80vh] rounded-lg shadow-lg object-contain left: 40%;" />
             </div>
           </div>
-        </div>
-      </header>
-      <!-- Mobile menu (hidden by default) -->
-      <div
-        id="mobile-menu"
-        class="md:hidden fixed inset-x-4 top-20 z-40 origin-top-right rounded-lg bg-white/95 p-4 shadow-lg hidden transition-transform duration-200 ease-out"
-        aria-hidden="true"
-      >
-        <nav class="flex flex-col gap-3">
-          <a
-            href="index.html"
-            aria-current="page"
-            class="mt-2 w-full inline-flex items-center justify-start rounded-lg bg-golden-main text-white px-3 py-2 font-bold"
-            >Home</a
-          >
-          <a
-            href="insight.html"
-            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
-            >Insights</a
-          >
-          <a
-            href="episodes.html"
-            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
-            >Episodes</a
-          >
-   <a
-            href="gallery.html"
-            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
-            >Gallery</a
-          >
-          <a
-            href="contact.html"
-            class="text-text-dark font-medium px-3 py-2 rounded hover:bg-golden-main/10"
-            >Contact</a
-          >
-          <a
-            href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
-            target="_blank"
-            class="mt-2 w-full inline-flex items-center justify-center rounded-lg bg-golden-main text-white py-2 font-bold"
-            rel="noopener noreferrer"
-          >
-            Watch Now
-          </a>
-        </nav>
-      </div>
-      <main class="flex-grow">
-        <div class="container mx-auto px-4">
-          <section class="reveal min-h-screen grad flex items-center">
-            <div
-              class="relative grid grid-cols-1 md:grid-cols-2 items-center w-full min-h-screen overflow-hidden rounded-xl p-6 sm:p-12 lg:p-16 gap-12"
-            >
-              <!-- Text Content -->
-              <div
-                class="relative z-10 flex flex-col items-center md:items-start gap-6 text-center md:text-left"
-              >
-                <h1
-                  class="text-xl sm:text-2xl md:text-4xl lg:text-8xl font-black tracking-tighter text-text-dark whitespace-nowrap hero-h1"
-                >
-                  KE <span class="text-golden-main">CHACHI</span> GAR
-                </h1>
+        </section>
 
-                <p
-                  class="max-w-md text-sm sm:text-4xl md:text-6xl dancing-script-bold text-golden-main hero-p"
-                >
-                  Authentic Voices
-                </p>
-                <a
-                  href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
-                  target="_blank"
-                  class="mt-4 inline-flex min-w-[84px] h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
-                  rel="noopener noreferrer"
-                >
-                  <span class="truncate">Watch Now</span>
-                </a>
+        <section class="reveal py-16">
+          <div class="mx-auto max-w-5xl px-4">
+            <!-- Heading -->
+            <h2 class="text-3xl font-bold tracking-tight text-center text-text-dark sm:text-4xl gradient-underline">
+              Ke Chahci Gar Podcast
+            </h2>
+
+            <!-- Content -->
+            <div class="mt-10 grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+              <!-- Left: Image -->
+              <div>
+                <img class="h-90 w-full rounded-lg object-cover shadow-lg reveal"
+                  src="assets/photo_2025-09-27_01-45-14.jpg" alt="Our Story" />
               </div>
 
-              <!-- Image -->
-              <div
-                class="relative z-10 flex justify-center items-center hero-img"
-              >
-                <img
-                  src="assets/photo_2025-09-26_23-00-36.jpg"
-                  alt="Ke Chachi Gar"
-                  class="max-w-full h-auto max-h-[80vh] rounded-lg shadow-lg object-contain left: 40%;"
-                />
+              <!-- Right: Text -->
+              <div>
+                <p class="text-lg leading-8 text-text-light">
+                  <span class="font-semibold text-text-dark grad">KE CHACHI GAR</span>
+                  Podcast is my space to share stories, conversations, and truths that matter. Through each episode, I
+                  open my heart to talk about the struggles and hopes of our youth, women, and communities. I invite
+                  voices from every walk of life—artists, leaders, and everyday people—because I believe their journeys
+                  carry wisdom and inspiration. This podcast is my way of reminding us all that we are created with
+                  purpose, and when we walk in that truth, we can bring light, unity, and change to the world.
+                </p>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section class="reveal py-16">
-            <div class="mx-auto max-w-5xl px-4">
-              <!-- Heading -->
+        <section class="reveal py-16">
+          <h2 class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline">
+            About
+          </h2>
+          <div
+            class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row text-center md:text-left">
+            <img alt="Chachi Tadese" class="h-90 w-90 md:h-72 md:w-72 lg:h-80 lg:w-90 rounded-lg object-cover shadow-lg"
+              src="assets/photo_2025-09-27_01-55-59.jpg" />
+            <div>
+              <h3 class="text-3xl font-bold text-text-dark">Chachi Tadese</h3>
+              <p class="mt-1 text-lg font-medium text-golden-main">
+                Artist • Storyteller • Community Servant
+              </p>
+              <p class="mt-4 text-text-light text-left">
+                I was born and raised in Ethiopia, and my work extends far
+                beyond music. Guided by my faith, I see my humanitarian
+                mission as a divine calling to support children, young adults,
+                and girls who face challenges such as addiction and lack of
+                education.<br />I have been involved in school feeding programs and
+                other initiatives that provide vital resources to vulnerable
+                communities, helping this generation recognize their true
+                worth and potential.<br /><br />
+              </p>
+            </div>
+
+          </div>
+          <div
+            class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row flex-col-reverse text-center md:text-left">
+            <div>
+
+              <p class="mt-4 text-text-light text-left">
+                As a Goodwill Ambassador, I have
+                collaborated with organizations such as the Ministry of
+                Education, the Ministry of Peace, Ayseletenm, and UNICEF to
+                raise funds and awareness for causes that uplift Ethiopia’s
+                youth. My work has touched the lives of many street children
+                and young people across the country.<br />
+                As an artist,
+                entrepreneur, and advocate, I am committed to living a life of
+                creativity, compassion, and faith—helping others walk in the
+                fullness of God’s purpose.<br /> I am also working to build an
+                institute that will empower young Ethiopians to create
+                lasting, positive change in their lives. </p>
+            </div>
+            <img alt="Chachi Tadese" class="h-90 w-80 md:h-72 md:w-72 lg:h-80 lg:w-80 rounded-lg object-cover shadow-lg"
+              src="assets/photo_2025-09-27_02-11-59.jpg" />
+          </div>
+          <div
+            class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row text-center md:text-left">
+            <img alt="Chachi Tadese" class="h-90 w-90 md:h-72 md:w-72 lg:h-80 lg:w-90 rounded-lg object-cover shadow-lg"
+              src="assets/soartos.jpg" />
+            <div>
+              <p class="mt-1 text-lg font-medium text-golden-main">
+                Soar to Success
+              </p>
+              <p class="mt-4 text-text-light text-left">
+                Soar to Success was one of my early efforts to tackle the root challenges in education. It focused
+                on high school students, helping them improve their English, discover new learning tools, and access
+                better opportunities for higher education abroad. The program revealed how limited access to quality
+                learning and mentorship can shape young people’s futures—often determining whether they find purpose or
+                fall into cycles of unemployment and hopelessness. These lessons became part of the foundation for Ke
+                Chachi Gar, inspiring me to use the podcast as a broader platform to discuss these intersections and
+                share real stories of growth, struggle, and transformation.<br /><br />
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="py-16">
+          <div class="mx-auto max-w-5xl">
+            <div class="text-center">
               <h2
-                class="text-3xl font-bold tracking-tight text-center text-text-dark sm:text-4xl gradient-underline"
-              >
-                Ke Chahci Gar Podcast
+                class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline">
+                Goodwill Ambassador-Ayseletinibignim
               </h2>
+              <p class="mt-4 max-w-3xl mx-auto text-lg leading-8 text-text-light">
+                As the Goodwill Ambassador of the Ayseletinibignim Anti-Addiction Movement, I use my
+                voice to raise awareness, inspire hope, and support those affected by addiction. This
+                mission is deeply personal to me—I believe in the power of compassion, understanding,
+                and community to bring healing. Together, we can break the stigma and build a future
+                rooted in dignity and love. <br />
+              </p>
 
-              <!-- Content -->
+
+
+              <h2
+                class="mb-12 mt-20 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline">
+                Ayseletinibignim Anti-Addiction Movement </h2>
+              <p class="mt-4 max-w-3xl mx-auto text-lg leading-8 text-text-light">
+                The Ayseletinibignim Anti-Addiction Movement is a national initiative dedicated to
+                preventing and addressing substance addiction through awareness, education, and
+                rehabilitation. Founded to protect youth and strengthen families, the movement promotes
+                open dialogue about mental health, recovery, and social responsibility. By combining
+                community outreach, counseling, and advocacy, Ayseletinibignim works to break stigma,
+                restore hope, and build a healthier, addiction-free society across Ethiopia
+              </p>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+        <section class="reveal py-16">
+          <div class="mx-auto max-w-5xl">
+            <h2
+              class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline">
+              Mission, Vision, and Goals
+            </h2>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+              <!-- Mission Card -->
               <div
-                class="mt-10 grid grid-cols-1 items-center gap-8 md:grid-cols-2"
-              >
-                <!-- Left: Image -->
-                <div>
-                  <img
-                    class="h-90 w-full rounded-lg object-cover shadow-lg reveal"
-                    src="assets/photo_2025-09-27_01-45-14.jpg"
-                    alt="Our Story"
-                  />
+                class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125">
+                  <span class="material-symbols-outlined">
+                    track_changes
+                  </span>
                 </div>
+                <h3 class="text-xl font-bold">Mission</h3>
+                <p class="text-text-light">
+                  My mission is to create a platform that gives voice to stories of resilience, creativity, and faith,
+                  while addressing real-life challenges. Through honest dialogue, we aim to encourage, educate, and
+                  connect people across generations.
+                </p>
+              </div>
 
-                <!-- Right: Text -->
-                <div>
-                  <p class="text-lg leading-8 text-text-light">
-                    <span class="font-semibold text-text-dark grad"
-                      >KE CHACHI GAR</span
-                    >
-                    was born out of Chachi Tadesse’s journey of struggle, faith,
-                    and purpose. From overcoming challenges to embracing her
-                    calling to serve, Chachi uses her podcast to connect
-                    Ethiopians at home and abroad, sharing real stories that
-                    uplift, inspire, and strengthen community.
+              <!-- Vision Card -->
+              <div
+                class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125">
+                  <span class="material-symbols-outlined"> visibility </span>
+                </div>
+                <h3 class="text-xl font-bold">Vision</h3>
+                <p class="text-text-light">
+                  The vision of KE Chachi Gar is to inspire and uplift lives through meaningful conversations rooted in
+                  faith, culture, and personal growth empowering listeners to embrace positive change and walk in God’s
+                  purpose.
+                </p>
+              </div>
+
+              <!-- Objectives Card -->
+              <div
+                class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125">
+                  <span class="material-symbols-outlined"> checklist </span>
+                </div>
+                <h3 class="text-xl font-bold">Goals</h3>
+
+                <ul class="text-text-light">
+                  <li>• Empower youth and women to recognize their value and potential.</li>
+                  <li>• Provide guidance and inspiration through faith-centered conversations.</li>
+                  <li> • Highlight social issues and solutions that create lasting impact.
+                  </li>
+                  <li>• Build a community of listeners who support one another in growth and purpose.</li>
+                </ul>
+
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="py-16">
+          <div class="mx-auto max-w-5xl">
+            <div class="text-center">
+              <h2 class="text-3xl font-bold tracking-tight text-text-dark sm:text-4xl">
+                Why This Podcast Matters
+              </h2>
+              <p class="mt-4 max-w-3xl mx-auto text-lg leading-8 text-text-light">
+                Ethiopia’s youth stand at a crossroads. Many face unemployment
+                after years of study, others struggle with addiction, and
+                students often feel education does not prepare them for real
+                life. KE CHACHI GAR exists to respond to these challenges —
+                offering stories, conversations, and solutions that inspire a
+                better future.
+              </p>
+            </div>
+            <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <div
+                class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color md:col-span-2 lg:col-span-1 hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal">
+
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main">
+                    <span class="material-symbols-outlined"> school </span>
+                  </div>
+                  <h3 class="text-xl font-bold text-text-dark">
+                    Education &amp; A Better Future
+                  </h3>
+                  <p class="text-text-light">
+                    Our content emphasizes the importance of holistic
+                    education and personal development. We discuss modern
+                    educational approaches and the role of community in
+                    nurturing resilient individuals for a better future.
                   </p>
                 </div>
               </div>
-            </div>
-          </section>
 
-          <section class="reveal py-16">
-            <h2
-              class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline"
-            >
-              About
-            </h2>
-            <div
-              class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row text-center md:text-left"
-            >
-              <img
-                alt="Chachi Tadese"
-                class="h-90 w-90 md:h-72 md:w-72 lg:h-80 lg:w-90 rounded-lg object-cover shadow-lg"
-                src="assets/photo_2025-09-27_01-55-59.jpg"
-              />
-              <div>
-                <h3 class="text-3xl font-bold text-text-dark">Chachi Tadese</h3>
-                <p class="mt-1 text-lg font-medium text-golden-main">
-                  Artist • Storyteller • Community Servant
-                </p>
-                <p class="mt-4 text-text-light text-left">
-                  I was born and raised in Ethiopia, and my work extends far
-                  beyond music. Guided by my faith, I see my humanitarian
-                  mission as a divine calling to support children, young adults,
-                  and girls who face challenges such as addiction and lack of
-                  education.<br/>I have been involved in school feeding programs and
-                  other initiatives that provide vital resources to vulnerable
-                  communities, helping this generation recognize their true
-                  worth and potential.<br/><br/> 
-                </p>
-              </div>
-                   
-            </div>
-       <div
-              class="mx-auto flex max-w-5xl flex-col items-center gap-8 rounded-lg bg-card-bg p-8 md:flex-row flex-col-reverse text-center md:text-left"
-            >
-              <div>
-              
-                <p class="mt-4 text-text-light text-left">
-                  As a Goodwill Ambassador, I have
-                  collaborated with organizations such as the Ministry of
-                  Education, the Ministry of Peace, Ayseletenm, and UNICEF to
-                  raise funds and awareness for causes that uplift Ethiopia’s
-                  youth. My work has touched the lives of many street children
-                  and young people across the country.<br/>
-                 As an artist,
-                  entrepreneur, and advocate, I am committed to living a life of
-                  creativity, compassion, and faith—helping others walk in the
-                  fullness of God’s purpose.<br/> I am also working to build an
-                  institute that will empower young Ethiopians to create
-                  lasting, positive change in their lives. </p>
-              </div>
-              <img
-                alt="Chachi Tadese"
-                class="h-90 w-80 md:h-72 md:w-72 lg:h-80 lg:w-80 rounded-lg object-cover shadow-lg"
-                src="assets/photo_2025-09-27_02-11-59.jpg"
-              />
-            </div>
-          </section>
+              <div
+                class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal">
 
-<section class="reveal py-16">
-            <div class="mx-auto max-w-5xl">
-              <h2
-                class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline"
-              >
-                Mission, Vision, and Goals
-              </h2>
-              <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-                <!-- Mission Card -->
-                <div
-                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
-                >
+
+                <div class="flex flex-col gap-2">
                   <div
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
-                  >
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main">
+                    <span class="material-symbols-outlined"> work_off </span>
+                  </div>
+                  <h3 class="text-xl font-bold text-text-dark">
+                    Unemployment &amp; Youth Challenges
+                  </h3>
+                  <p class="text-text-light">
+                    We address the prevalent issue of unemployment and other
+                    youth challenges, offering insights and encouragement. Our
+                    episodes explore diverse paths to success and fulfillment,
+                    fostering an entrepreneurial spirit.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal">
+
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main">
                     <span class="material-symbols-outlined">
-                      track_changes
+                      self_improvement
                     </span>
                   </div>
-                  <h3 class="text-xl font-bold">Mission</h3>
-                  <p class="text-text-light">
-                   My mission is to create a platform that gives voice to stories of resilience, creativity, and faith, while addressing real-life challenges. Through honest dialogue, we aim to encourage, educate, and connect people across generations.
-                  </p>
-                </div>
-
-                <!-- Vision Card -->
-                <div
-                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
-                >
-                  <div
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
-                  >
-                    <span class="material-symbols-outlined"> visibility </span>
-                  </div>
-                  <h3 class="text-xl font-bold">Vision</h3>
-                  <p class="text-text-light">
-                   The vision of KE Chachi Gar is to inspire and uplift lives through meaningful conversations rooted in faith, culture, and personal growth empowering listeners to embrace positive change and walk in God’s purpose.
-                  </p>
-                </div>
-
-                <!-- Objectives Card -->
-                <div
-                  class="flex flex-col gap-4 rounded-lg bg-card-bg p-6 border border-border-color transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-golden-main/20 hover:to-golden-main/50 hover:text-text-dark"
-                >
-                  <div
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main transition-transform duration-300 ease-in-out hover:scale-125"
-                  >
-                    <span class="material-symbols-outlined"> checklist </span>
-                  </div>
-                  <h3 class="text-xl font-bold">Goals</h3>
-                  
-                    <ul class="text-text-light">
-                      <li>• Empower youth and women to recognize their value and potential.</li>
-                      <li>• Provide guidance and inspiration through faith-centered conversations.</li>
-                    <li> • Highlight social issues and solutions that create lasting impact.
- </li>
- <li>• Build a community of listeners who support one another in growth and purpose.</li>
-                    </ul>
-                   
-  
-
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <section class="py-16">
-            <div class="mx-auto max-w-5xl">
-              <div class="text-center">
-                <h2
-                  class="text-3xl font-bold tracking-tight text-text-dark sm:text-4xl"
-                >
-                  Why This Podcast Matters
-                </h2>
-                <p
-                  class="mt-4 max-w-3xl mx-auto text-lg leading-8 text-text-light"
-                >
-                  Ethiopia’s youth stand at a crossroads. Many face unemployment
-                  after years of study, others struggle with addiction, and
-                  students often feel education does not prepare them for real
-                  life. KE CHACHI GAR exists to respond to these challenges —
-                  offering stories, conversations, and solutions that inspire a
-                  better future.
-                </p>
-              </div>
-              <div
-                class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
-              > <div
-                  class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color md:col-span-2 lg:col-span-1 hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal"
-                >
-               
-                  <div class="flex flex-col gap-2">
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main"
-                    >
-                      <span class="material-symbols-outlined"> school </span>
-                    </div>
-                    <h3 class="text-xl font-bold text-text-dark">
-                      Education &amp; A Better Future
-                    </h3>
-                    <p class="text-text-light">
-                      Our content emphasizes the importance of holistic
-                      education and personal development. We discuss modern
-                      educational approaches and the role of community in
-                      nurturing resilient individuals for a better future.
-                    </p>
-                  </div>
-                </div>
-              
-                <div
-                  class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal"
-                >
-               
-               
-                  <div class="flex flex-col gap-2">
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main"
-                    >
-                      <span class="material-symbols-outlined"> work_off </span>
-                    </div>
-                    <h3 class="text-xl font-bold text-text-dark">
-                      Unemployment &amp; Youth Challenges
-                    </h3>
-                    <p class="text-text-light">
-                      We address the prevalent issue of unemployment and other
-                      youth challenges, offering insights and encouragement. Our
-                      episodes explore diverse paths to success and fulfillment,
-                      fostering an entrepreneurial spirit.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col gap-6 rounded-lg bg-card-bg p-6 border border-border-color hover:text-text-dark transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl reveal"
-                >
-                
-                  <div class="flex flex-col gap-2">
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full bg-golden-main/10 text-golden-main"
-                    >
-                      <span class="material-symbols-outlined">
-                        self_improvement
-                      </span>
-                    </div>
-                    <h3 class="text-xl font-bold text-text-dark">
-                      Addiction &amp; Mental Health
-                    </h3>
-                    <p class="text-text-light">
-                      Tackling the stigma around addiction and mental health, we
-                      provide a platform for open discussion. We share stories
-                      of recovery and provide expert advice, aiming to create a
-                      supportive community for those affected.
-                    </p>
-                  </div>
-                </div>
-                </div>
-            </div>
-            <div class="mt-16 flex justify-center">
-              <a
-                href="insights.html"
-                target="_blank"
-                class="mt-4 inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
-                rel="noopener noreferrer"
-              >
-                <span class="truncate">Learn More</span>
-              </a>
-            </div>
-          </section>
-
-          
-         
-          
-          <section class="reveal py-16">
-            <h2
-              class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline"
-            >
-              Latest Episodes
-            </h2>
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-              <!-- Episode 1 -->
-              <div
-                class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300"
-              >
-                <div class="relative group">
-                  <img
-                    alt="Episode 1 Thumbnail"
-                    class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
-                    src="assets/s1e1.jpg"
-                  />
-                  <a
-                    href="https://youtu.be/1w-GP7HUku4?si=AZKPYFQvzF3RVMij"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Watch Episode 1 on YouTube"
-                    class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                  >
-                    <div
-                      class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110"
-                    >
-                      <span class="material-symbols-outlined">play_arrow</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="flex flex-1 flex-col p-6">
-                  <p class="text-sm text-golden-main">Season 1</p>
-                  <p class="text-sm text-golden-main">Episode 1</p>
-                  <h3 class="mt-2 text-lg font-bold text-text-dark">
-                   Was Raped by My Uncle and Gave Birth at 14.
+                  <h3 class="text-xl font-bold text-text-dark">
+                    Addiction &amp; Mental Health
                   </h3>
-                  <p class="mt-2 flex-grow text-sm text-text-light">
-                   The tragic story of the youth mentor we met yesterday.
+                  <p class="text-text-light">
+                    Tackling the stigma around addiction and mental health, we
+                    provide a platform for open discussion. We share stories
+                    of recovery and provide expert advice, aiming to create a
+                    supportive community for those affected.
                   </p>
-                  <a
-                    href="https://youtu.be/1w-GP7HUku4?si=AZKPYFQvzF3RVMij"
-                    target="_blank"
-                    class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
-                    rel="noopener noreferrer"
-                  >
-                    <span>Watch Now</span>
-                    <span class="material-symbols-outlined text-base"
-                      >play_arrow</span
-                    >
-                  </a>
                 </div>
               </div>
-              <!-- Episode 2 -->
-              
             </div>
-          </section>
-          <div class="flex flex-col items-center text-center gap-6 p-6">
-            <h2
-              class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-800"
-            >
-              Subscribe to our YouTube Channel to stay up to date.
-              <br />
-              Make sure to hit the bell
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="inline w-7 h-7 text-red-500 ml-1 align-middle"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M14.25 18.75a2.25 2.25 0 01-4.5 0m8.25-6v-1.5
+          </div>
+          <div class="mt-16 flex justify-center">
+            <a href="insights.html" target="_blank"
+              class="mt-4 inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-golden-main text-white text-base font-bold leading-normal tracking-wide hover:bg-golden-dark transition-colors"
+              rel="noopener noreferrer">
+              <span class="truncate">Learn More</span>
+            </a>
+          </div>
+        </section>
+
+
+
+
+        <section class="reveal py-16">
+          <h2 class="mb-12 text-center text-3xl font-bold tracking-tight text-text-dark sm:text-4xl gradient-underline">
+            Latest Episodes
+          </h2>
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <!-- Episode 1 -->
+            <div
+              class="flex flex-col overflow-hidden rounded-lg bg-card-bg border border-border-color shadow-md hover:shadow-2xl transition-shadow duration-300">
+              <div class="relative group">
+                <img alt="Episode 1 Thumbnail"
+                  class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-75"
+                  src="assets/s1e1.jpg" />
+                <a href="https://youtu.be/1w-GP7HUku4?si=AZKPYFQvzF3RVMij" target="_blank" rel="noopener noreferrer"
+                  aria-label="Watch Episode 1 on YouTube"
+                  class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <div
+                    class="flex h-14 w-14 items-center justify-center rounded-full bg-golden-main/90 text-white text-2xl shadow-lg transform transition-transform duration-300 hover:scale-110">
+                    <span class="material-symbols-outlined">play_arrow</span>
+                  </div>
+                </a>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <p class="text-sm text-golden-main">Season 1</p>
+                <p class="text-sm text-golden-main">Episode 1</p>
+                <h3 class="mt-2 text-lg font-bold text-text-dark">
+                  Was Raped by My Uncle and Gave Birth at 14.
+                </h3>
+                <p class="mt-2 flex-grow text-sm text-text-light">
+                  The tragic story of the youth mentor we met yesterday.
+                </p>
+                <a href="https://youtu.be/1w-GP7HUku4?si=AZKPYFQvzF3RVMij" target="_blank"
+                  class="mt-4 inline-flex w-fit items-center gap-2 rounded-md h-9 px-4 text-sm font-medium bg-golden-main/10 text-golden-dark hover:bg-golden-main/20 transition-colors"
+                  rel="noopener noreferrer">
+                  <span>Watch Now</span>
+                  <span class="material-symbols-outlined text-base">play_arrow</span>
+                </a>
+              </div>
+            </div>
+            <!-- Episode 2 -->
+
+          </div>
+        </section>
+        <div class="flex flex-col items-center text-center gap-6 p-6">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-800">
+            Subscribe to our YouTube Channel to stay up to date.
+            <br />
+            Make sure to hit the bell
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="inline w-7 h-7 text-red-500 ml-1 align-middle">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 18.75a2.25 2.25 0 01-4.5 0m8.25-6v-1.5
                A6.75 6.75 0 006.75 4.5v1.5
-               m0 0a6.75 6.75 0 00-1.5 4.5v1.5l-1.5 3h16.5l-1.5-3z"
-                />
+               m0 0a6.75 6.75 0 00-1.5 4.5v1.5l-1.5 3h16.5l-1.5-3z" />
+            </svg>
+          </h2>
+
+          <!-- YouTube Subscribe Button -->
+          <div class="g-ytsubscribe" data-channelid="UCdiy1qMehGf-ni8sv1uvo6g" data-layout="default"
+            data-count="default"></div>
+        </div>
+
+        <!-- Load YouTube Subscribe Script -->
+        <script src="https://apis.google.com/js/platform.js"></script>
+      </div>
+    </main>
+
+    <footer class="border-t border-border-color grad">
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+          <!-- Social Icons -->
+          <div class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:order-2">
+            <a href="https://www.facebook.com/share/19LXsHXZGS/" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f text-2xl text-[#d4b36d] hover:text-[#b7954c]"></i>
+            </a>
+
+            <!-- ✅ X (new Twitter logo as SVG) -->
+            <a href="https://x.com/ChachiT1130/photo" target="_blank" aria-label="X">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="w-6 h-6 text-[#d4b36d] hover:text-[#b7954c]">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.82-5.97 6.82H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.208 5.45-6.208z" />
               </svg>
-            </h2>
+            </a>
 
-            <!-- YouTube Subscribe Button -->
-            <div
-              class="g-ytsubscribe"
-              data-channelid="UCdiy1qMehGf-ni8sv1uvo6g"
-              data-layout="default"
-              data-count="default"
-            ></div>
+            <a href="https://www.instagram.com/chachi_tadesse?igsh=MXFqMTA3MnI4ZTNhMA==" target="_blank"
+              aria-label="Instagram">
+              <i class="fab fa-instagram text-2xl text-[#d4b36d] hover:text-[#b7954c]"></i>
+            </a>
+            <a href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr" target="_blank" aria-label="YouTube">
+              <i class="fab fa-youtube text-2xl text-[#d4b36d] hover:text-[#b7954c]"></i>
+            </a>
+            <!-- Email -->
+            <a href="mailto:Chachitadesse1130@gmail.com" target="_blank" aria-label="Email">
+              <i class="fa-solid fa-envelope text-2xl text-[#d4b36d] hover:text-[#b7954c]"></i>
+            </a>
+
           </div>
 
-          <!-- Load YouTube Subscribe Script -->
-          <script src="https://apis.google.com/js/platform.js"></script>
-        </div>
-      </main>
-
-      <footer class="border-t border-border-color grad">
-        <div class="container mx-auto px-4 py-12">
-          <div
-            class="flex flex-col items-center justify-between gap-8 md:flex-row"
-          >
-            <!-- Social Icons -->
-            <div
-              class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:order-2"
-            >
-              <a
-                href="https://www.facebook.com/share/19LXsHXZGS/"
-                target="_blank"
-                aria-label="Facebook"
-              >
-                <i
-                  class="fab fa-facebook-f text-2xl text-[#d4b36d] hover:text-[#b7954c]"
-                ></i>
-              </a>
-
-              <!-- ✅ X (new Twitter logo as SVG) -->
-              <a href="https://x.com/ChachiT1130/photo" target="_blank" aria-label="X">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6 text-[#d4b36d] hover:text-[#b7954c]"
-                >
-                  <path
-                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.82-5.97 6.82H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.208 5.45-6.208z"
-                  />
-                </svg>
-              </a>
-
-              <a
-                href="https://www.instagram.com/chachi_tadesse?igsh=MXFqMTA3MnI4ZTNhMA=="
-                target="_blank"
-                aria-label="Instagram"
-              >
-                <i
-                  class="fab fa-instagram text-2xl text-[#d4b36d] hover:text-[#b7954c]"
-                ></i>
-              </a>
-              <a
-                href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
-                target="_blank"
-                aria-label="YouTube"
-              >
-                <i
-                  class="fab fa-youtube text-2xl text-[#d4b36d] hover:text-[#b7954c]"
-                ></i>
-              </a>
-              <!-- Email -->
-              <a
-                href="mailto:Chachitadesse1130@gmail.com"
-                target="_blank"
-                aria-label="Email"
-              >
-                <i
-                  class="fa-solid fa-envelope text-2xl text-[#d4b36d] hover:text-[#b7954c]"
-                ></i>
-              </a>
-             
-            </div>
-
-            <!-- Copyright -->
-            <p class="text-sm text-text-light md:order-1">
-              © 2024 KE CHACHI GAR. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
-
-      <!-- ✅ Font Awesome Free CDN -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      />
-    </div>
-
-    <div id="site-outro" class="site-overlay" aria-hidden="true">
-      <div class="overlay-content" role="dialog" aria-modal="true">
-        <h2 class="outro-title">Thanks for visiting</h2>
-        <p class="outro-sub">Subscribe on YouTube to catch every episode.</p>
-        <div class="outro-actions">
-          <a
-            href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-overlay"
-            >Visit Channel</a
-          >
-          <button id="outro-close" class="btn-overlay">Close</button>
+          <!-- Copyright -->
+          <p class="text-sm text-text-light md:order-1">
+            © 2024 KE CHACHI GAR. All rights reserved.
+          </p>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- ✅ Font Awesome Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </div>
+
+  <div id="site-outro" class="site-overlay" aria-hidden="true">
+    <div class="overlay-content" role="dialog" aria-modal="true">
+      <h2 class="outro-title">Thanks for visiting</h2>
+      <p class="outro-sub">Subscribe on YouTube to catch every episode.</p>
+      <div class="outro-actions">
+        <a href="https://youtube.com/@chachit1956?si=5OrODrpPMtNKEROr" target="_blank" rel="noopener noreferrer"
+          class="btn-overlay">Visit Channel</a>
+        <button id="outro-close" class="btn-overlay">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
