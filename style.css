@@ -140,7 +140,9 @@ h2.text-text-dark {
     opacity: 1;
   }
 }
-
+.link-a{
+  text-decoration: underline !important;
+}
 /* All Episodes section background styling (dark gold) */
 section#episodes.all-episodes {
   background: linear-gradient(
